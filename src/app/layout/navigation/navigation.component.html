@@ -1,0 +1,11 @@
+<div *ngIf="this.device_width > 500; else mobile">
+
+</div>
+
+<ng-template #mobile>
+<div class="mobile-nav" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+</div>
+</ng-template>

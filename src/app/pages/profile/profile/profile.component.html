@@ -1,0 +1,6 @@
+<div *ngIf="this.device_width > 500; else mobile">
+<app-desktop></app-desktop>
+</div>
+<ng-template #mobile>
+<app-mobile></app-mobile>
+</ng-template>
