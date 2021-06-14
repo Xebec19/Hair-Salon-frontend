@@ -11,6 +11,7 @@ import { MaterialModule } from './global/material/material.module';
 
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { ShortenPipe } from './global/pipes/shorten.pipe';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     AppComponent,
     NavigationComponent,
     FooterComponent,
+    ShortenPipe,
   ],
   imports: [
     BrowserModule,

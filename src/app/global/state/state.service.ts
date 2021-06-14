@@ -4,6 +4,5 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class StateService {
-
-  constructor() { }
+  device_width:number = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 }
