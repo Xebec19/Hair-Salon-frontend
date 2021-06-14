@@ -11,100 +11,10 @@
   </svg>
 </div>
 <div>
-<div fxLayout="row wrap" class="corousel">
-  
-    <article
-    class="card"
-  >
-    <img
-      src="http://placekitten.com/g/600/300"
-      class="card-image"
-      alt="Photo of a kitten looking menacing."
-    />
-    <div class="content">
-      <div class="title">
-        <div class="title-name">
-          <h1 class="title-h1">Cat</h1>
-        </div>
-        <div class="title-price">
-          <h2 class="price">$1,000</h2>
-        </div>
-      </div>
-      <p class="description">
-        {{'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur magnam porro autem minima iusto repudiandae nemo cumque quibusdam soluta id doloremque et nesciunt perspiciatis vitae asperiores, ratione non alias quia.'|slice:0:30}}
-      </p>
-    </div>
-  </article>
-
-  <article
-    class="card"
-  >
-    <img
-      src="http://placekitten.com/g/600/300"
-      class="card-image"
-      alt="Photo of a kitten looking menacing."
-    />
-    <div class="content">
-      <div class="title">
-        <div class="title-name">
-          <h1 class="title-h1">Cat</h1>
-        </div>
-        <div class="title-price">
-          <h2 class="price">$1,000</h2>
-        </div>
-      </div>
-      <p class="description">
-        {{'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur magnam porro autem minima iusto repudiandae nemo cumque quibusdam soluta id doloremque et nesciunt perspiciatis vitae asperiores, ratione non alias quia.'|slice:0:30}}
-      </p>
-    </div>
-  </article>
-
-  <article
-    class="card"
-  >
-    <img
-      src="http://placekitten.com/g/600/300"
-      class="card-image"
-      alt="Photo of a kitten looking menacing."
-    />
-    <div class="content">
-      <div class="title">
-        <div class="title-name">
-          <h1 class="title-h1">Cat</h1>
-        </div>
-        <div class="title-price">
-          <h2 class="price">$1,000</h2>
-        </div>
-      </div>
-      <p class="description">
-        {{'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur magnam porro autem minima iusto repudiandae nemo cumque quibusdam soluta id doloremque et nesciunt perspiciatis vitae asperiores, ratione non alias quia.'|slice:0:30}}
-      </p>
-    </div>
-  </article>
-
-  <article
-    class="card"
-  >
-    <img
-      src="http://placekitten.com/g/600/300"
-      class="card-image"
-      alt="Photo of a kitten looking menacing."
-    />
-    <div class="content">
-      <div class="title">
-        <div class="title-name">
-          <h1 class="title-h1">Cat</h1>
-        </div>
-        <div class="title-price">
-          <h2 class="price">$1,000</h2>
-        </div>
-      </div>
-      <p class="description">
-        {{'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur magnam porro autem minima iusto repudiandae nemo cumque quibusdam soluta id doloremque et nesciunt perspiciatis vitae asperiores, ratione non alias quia.'|slice:0:30}}
-      </p>
-    </div>
-  </article>
-  
-</div>
+  <div fxLayout="flex" class="corousel">
+    <span *ngFor="let hairStyle of hairStyles" class="card">
+        <img [src]="hairStyle.image" [alt]="hairStyle.name" class="hairStyle_image"/>
+    </span>
+  </div>
 </div>
 <div class="shadow">Hair Salon</div>

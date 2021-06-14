@@ -12,6 +12,7 @@
 }
 .corousel {
   overflow: auto;
+  white-space: nowrap;
   scroll-behavior: smooth;
   scrollbar-width: 5px;
   scrollbar-color: grey;
@@ -30,49 +31,17 @@
 }
 
 .card{
-margin:15px 30px;
-border-radius: 15px;
-border-style: solid;
-border-width: 1px;
-border-color: rgba(0, 0, 0, .1);
-width: 250px;
-height: 300px;  
-overflow: hidden
+    width: 75% !important;
+    margin: 30px 15px;
+    padding:15px 30px;
+    overflow: hidden;
+    font-size:20px;
+    border-radius: 15px;
 }
-
-.card-image{
-width:100%;
-height: 70%;
+.hairStyle_image{
     object-fit: fill;
-}
-
-.content{
-
-}
-
-.title{
-display: table-cell;
-}
-
-.title-name{
-
-}
-
-.title-h1{
-
-}
-
-.title-price{
-display: table-cell;
-text-align:right;
-}
-
-.price{
-
-}
-
-.descripiton{
-
+    height: 70%;
+    width: 100%;
 }
 
 .shadow{
