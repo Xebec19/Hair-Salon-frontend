@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';  //req for carousel
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +28,8 @@ import { ShortenPipe } from './global/pipes/shorten.pipe';
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgxCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

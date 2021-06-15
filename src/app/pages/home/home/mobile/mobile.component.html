@@ -10,11 +10,11 @@
     ></path>
   </svg>
 </div>
-<div>
-  <div fxLayout="flex" class="corousel">
-    <span *ngFor="let hairStyle of hairStyles" class="card">
-        <img [src]="hairStyle.image" [alt]="hairStyle.name" class="hairStyle_image"/>
-    </span>
-  </div>
-</div>
+<ngx-carousel
+[inputs]="carouselOne"
+(carouselLoad)="myfunc($event)">
+<ngx-item NgxCarouselItem>
+  
+</ngx-item>
+</ngx-carousel>
 <div class="shadow">Hair Salon</div>
